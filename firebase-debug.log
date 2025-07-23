@@ -1,0 +1,122 @@
+[debug] [2025-07-23T08:51:27.835Z] ----------------------------------------------------------------------
+[debug] [2025-07-23T08:51:27.837Z] Command:       /Users/shanezhu/.nvm/versions/node/v20.19.4/bin/node /Users/shanezhu/.nvm/versions/node/v20.19.4/bin/firebase deploy --only hosting --project=random-number-assessment
+[debug] [2025-07-23T08:51:27.837Z] CLI Version:   14.11.1
+[debug] [2025-07-23T08:51:27.837Z] Platform:      darwin
+[debug] [2025-07-23T08:51:27.837Z] Node Version:  v20.19.4
+[debug] [2025-07-23T08:51:27.837Z] Time:          Wed Jul 23 2025 16:51:27 GMT+0800 (China Standard Time)
+[debug] [2025-07-23T08:51:27.837Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-23T08:51:27.927Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-23T08:51:27.928Z] > authorizing via FIREBASE_TOKEN environment variable
+[warn] ⚠  Authenticating with `FIREBASE_TOKEN` is deprecated and will be removed in a future major version of `firebase-tools`. Instead, use a service account key with `GOOGLE_APPLICATION_CREDENTIALS`: https://cloud.google.com/docs/authentication/getting-started 
+[debug] [2025-07-23T08:51:27.928Z] [iam] checking project random-number-assessment for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-07-23T08:51:27.929Z] No OAuth tokens found
+[debug] [2025-07-23T08:51:27.929Z] No OAuth tokens found
+[debug] [2025-07-23T08:51:27.929Z] > refreshing access token with scopes: []
+[debug] [2025-07-23T08:51:27.930Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-23T08:51:27.930Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-23T08:51:28.873Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-23T08:51:28.874Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-23T08:51:28.875Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/random-number-assessment:testIamPermissions [none]
+[debug] [2025-07-23T08:51:28.875Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/random-number-assessment:testIamPermissions x-goog-quota-user=projects/random-number-assessment
+[debug] [2025-07-23T08:51:28.875Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/random-number-assessment:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-23T08:51:30.243Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/random-number-assessment:testIamPermissions 200
+[debug] [2025-07-23T08:51:30.243Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/random-number-assessment:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-23T08:51:30.244Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:51:30.244Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:51:30.245Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/random-number-assessment [none]
+[debug] [2025-07-23T08:51:32.714Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/random-number-assessment 200
+[debug] [2025-07-23T08:51:32.714Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/random-number-assessment {"projectId":"random-number-assessment","projectNumber":"536573908302","displayName":"Random Number Assessment","name":"projects/random-number-assessment","resources":{"hostingSite":"random-number-assessment"},"state":"ACTIVE","etag":"1_03af5b86-ab43-4095-8be2-de75e5266f71"}
+[info] 
+[info] === Deploying to 'random-number-assessment'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-07-23T08:51:32.720Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:51:32.721Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:51:32.721Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/versions [none]
+[debug] [2025-07-23T08:51:32.721Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-07-23T08:51:34.297Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/versions 200
+[debug] [2025-07-23T08:51:34.298Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/versions {"name":"projects/536573908302/sites/random-number-assessment/versions/764730ce2354714c","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[random-number-assessment]: beginning deploy... 
+[info] i  hosting[random-number-assessment]: found 4 files in public 
+[debug] [2025-07-23T08:52:49.509Z] [hosting] uploading with 200 concurrency
+[debug] [2025-07-23T08:52:49.516Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:49.516Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:49.517Z] [hosting] hash cache [cHVibGlj] stored for 4 files
+[debug] [2025-07-23T08:52:49.517Z] [hosting][hash queue][FINAL] {"max":4,"min":0,"avg":1,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":6}
+[debug] [2025-07-23T08:52:49.517Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/536573908302/sites/random-number-assessment/versions/764730ce2354714c:populateFiles [none]
+[debug] [2025-07-23T08:52:49.517Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/536573908302/sites/random-number-assessment/versions/764730ce2354714c:populateFiles {"files":{"/wordTask.csv":"be48547576371a60b0367f7415e40f85b4e9c6ed09835d509d582b12a70fa776","/styles.css":"9bcf670c1845620d7aedb8c59f647db51e0f723fd8f1f841e7e6b6332cdfc3e9","/index.html":"ff6f9ace1cd3cbe444968998e650ef9e952456160d4e74149bb6cb146f41e2b0","/script.js":"4d60eb83027913752f1d334087869f719d1a391f29113098b20ab8814e498bb4"}}
+[debug] [2025-07-23T08:52:52.578Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/536573908302/sites/random-number-assessment/versions/764730ce2354714c:populateFiles 200
+[debug] [2025-07-23T08:52:52.578Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/536573908302/sites/random-number-assessment/versions/764730ce2354714c:populateFiles {"uploadRequiredHashes":["4d60eb83027913752f1d334087869f719d1a391f29113098b20ab8814e498bb4"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/random-number-assessment/versions/764730ce2354714c/files"}
+[debug] [2025-07-23T08:52:52.579Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:52.579Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:52.580Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/random-number-assessment/versions/764730ce2354714c/files/4d60eb83027913752f1d334087869f719d1a391f29113098b20ab8814e498bb4 [none]
+[debug] [2025-07-23T08:52:52.580Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/random-number-assessment/versions/764730ce2354714c/files/4d60eb83027913752f1d334087869f719d1a391f29113098b20ab8814e498bb4 [stream]
+[debug] [2025-07-23T08:52:52.581Z] [hosting][populate queue][FINAL] {"max":3063,"min":3063,"avg":3063,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":3065}
+[debug] [2025-07-23T08:52:52.581Z] [hosting] uploads queued: 1
+[debug] [2025-07-23T08:52:54.647Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/random-number-assessment/versions/764730ce2354714c/files/4d60eb83027913752f1d334087869f719d1a391f29113098b20ab8814e498bb4 200
+[debug] [2025-07-23T08:52:54.647Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/random-number-assessment/versions/764730ce2354714c/files/4d60eb83027913752f1d334087869f719d1a391f29113098b20ab8814e498bb4 [stream]
+[debug] [2025-07-23T08:52:54.648Z] [hosting][upload queue][FINAL] {"max":2068,"min":2068,"avg":2068,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2070}
+[info] ✔  hosting[random-number-assessment]: file upload complete 
+[debug] [2025-07-23T08:52:54.649Z] [hosting] deploy completed after 5150ms
+[debug] [2025-07-23T08:52:54.649Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "function": {
+            "functionId": "uploadCSVToDrive"
+          }
+        }
+      ],
+      "site": "random-number-assessment"
+    },
+    "version": "projects/536573908302/sites/random-number-assessment/versions/764730ce2354714c"
+  }
+]
+[info] i  hosting[random-number-assessment]: finalizing version... 
+[debug] [2025-07-23T08:52:54.651Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:54.651Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:54.651Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/random-number-assessment/locations/-/functions [none]
+[debug] [2025-07-23T08:52:55.861Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/random-number-assessment/locations/-/functions 200
+[debug] [2025-07-23T08:52:55.861Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/random-number-assessment/locations/-/functions {}
+[debug] [2025-07-23T08:52:55.862Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:55.862Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:55.862Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/random-number-assessment/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2025-07-23T08:52:57.148Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/random-number-assessment/locations/-/functions 200
+[debug] [2025-07-23T08:52:57.148Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/random-number-assessment/locations/-/functions {"functions":[{"name":"projects/random-number-assessment/locations/us-central1/functions/uploadCSVToDrive","buildConfig":{"build":"projects/536573908302/locations/us-central1/builds/105d6897-82cd-4766-94c9-65492c4525ea","runtime":"nodejs18","entryPoint":"uploadCSVToDrive","source":{"storageSource":{"bucket":"gcf-v2-sources-536573908302-us-central1","object":"uploadCSVToDrive/function-source.zip","generation":"1733938279627307"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/random-number-assessment/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-536573908302-us-central1","object":"uploadCSVToDrive/function-source.zip","generation":"1733938279627307"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/random-number-assessment/serviceAccounts/536573908302-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/random-number-assessment/locations/us-central1/services/uploadcsvtodrive","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"random-number-assessment\",\"storageBucket\":\"random-number-assessment.firebasestorage.app\"}","GCLOUD_PROJECT":"random-number-assessment","EVENTARC_CLOUD_EVENT_SOURCE":"projects/random-number-assessment/locations/us-central1/services/uploadCSVToDrive","FUNCTION_TARGET":"uploadCSVToDrive","LOG_EXECUTION_ID":"true"},"maxInstanceCount":100,"ingressSettings":"ALLOW_ALL","uri":"https://uploadcsvtodrive-2lift37kma-uc.a.run.app","serviceAccountEmail":"536573908302-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"uploadcsvtodrive-00007-vel","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","updateTime":"2024-12-11T17:32:28.263985330Z","labels":{"firebase-functions-hash":"7b13261a660cab1de4a68c683ccdc7cb7a8ee474","deployment-tool":"cli-firebase"},"environment":"GEN_2","url":"https://us-central1-random-number-assessment.cloudfunctions.net/uploadCSVToDrive","createTime":"2024-12-03T02:36:56.225255510Z","satisfiesPzi":true}]}
+[debug] [2025-07-23T08:52:57.150Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:57.151Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:57.151Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/versions/764730ce2354714c updateMask=status%2Cconfig
+[debug] [2025-07-23T08:52:57.151Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/versions/764730ce2354714c {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","run":{"serviceId":"uploadcsvtodrive","region":"us-central1"}}]}}
+[debug] [2025-07-23T08:52:59.191Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/versions/764730ce2354714c 200
+[debug] [2025-07-23T08:52:59.191Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/versions/764730ce2354714c {"name":"projects/536573908302/sites/random-number-assessment/versions/764730ce2354714c","status":"FINALIZED","config":{"rewrites":[{"glob":"**","run":{"serviceId":"uploadcsvtodrive","region":"us-central1"}}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-07-23T08:51:33.042384Z","createUser":{"email":"bearslab.project@gmail.com"},"finalizeTime":"2025-07-23T08:52:58.353011Z","finalizeUser":{"email":"bearslab.project@gmail.com"}}
+[debug] [2025-07-23T08:52:59.192Z] [hosting] finalized version for random-number-assessment:[object Object]
+[info] ✔  hosting[random-number-assessment]: version finalized 
+[info] i  hosting[random-number-assessment]: releasing new version... 
+[debug] [2025-07-23T08:52:59.192Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:59.192Z] Checked if tokens are valid: true, expires at: 1753264287874
+[debug] [2025-07-23T08:52:59.193Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/channels/live/releases versionName=projects%2F536573908302%2Fsites%2Frandom-number-assessment%2Fversions%2F764730ce2354714c
+[debug] [2025-07-23T08:52:59.193Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/channels/live/releases {}
+[debug] [2025-07-23T08:53:00.411Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/channels/live/releases 200
+[debug] [2025-07-23T08:53:00.412Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/random-number-assessment/channels/live/releases {"name":"projects/536573908302/sites/random-number-assessment/channels/live/releases/1753260778889000","version":{"name":"projects/536573908302/sites/random-number-assessment/versions/764730ce2354714c","status":"FINALIZED","config":{"rewrites":[{"glob":"**","run":{"serviceId":"uploadcsvtodrive","region":"us-central1"}}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-07-23T08:51:33.042384Z","createUser":{"email":"bearslab.project@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIjNpIH5wE71TFQETlwul0IIZve4aWOio1LjhOfwT9UyI7geA=mo"},"finalizeTime":"2025-07-23T08:52:58.353011Z","finalizeUser":{"email":"bearslab.project@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIjNpIH5wE71TFQETlwul0IIZve4aWOio1LjhOfwT9UyI7geA=mo"}},"type":"DEPLOY","releaseTime":"2025-07-23T08:52:58.889Z","releaseUser":{"email":"bearslab.project@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIjNpIH5wE71TFQETlwul0IIZve4aWOio1LjhOfwT9UyI7geA=mo"}}
+[debug] [2025-07-23T08:53:00.412Z] [hosting] release: {"name":"projects/536573908302/sites/random-number-assessment/channels/live/releases/1753260778889000","version":{"name":"projects/536573908302/sites/random-number-assessment/versions/764730ce2354714c","status":"FINALIZED","config":{"rewrites":[{"glob":"**","run":{"serviceId":"uploadcsvtodrive","region":"us-central1"}}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-07-23T08:51:33.042384Z","createUser":{"email":"bearslab.project@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIjNpIH5wE71TFQETlwul0IIZve4aWOio1LjhOfwT9UyI7geA=mo"},"finalizeTime":"2025-07-23T08:52:58.353011Z","finalizeUser":{"email":"bearslab.project@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIjNpIH5wE71TFQETlwul0IIZve4aWOio1LjhOfwT9UyI7geA=mo"}},"type":"DEPLOY","releaseTime":"2025-07-23T08:52:58.889Z","releaseUser":{"email":"bearslab.project@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIjNpIH5wE71TFQETlwul0IIZve4aWOio1LjhOfwT9UyI7geA=mo"}}
+[info] ✔  hosting[random-number-assessment]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/random-number-assessment/overview
+[info] Hosting URL: https://random-number-assessment.web.app
+[debug] [2025-07-23T08:54:27.203Z] Error: Timed out.
+    at Timeout._onTimeout (/Users/shanezhu/.nvm/versions/node/v20.19.4/lib/node_modules/firebase-tools/lib/utils.js:272:49)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[error] 
+[error] Error: An unexpected error has occurred.

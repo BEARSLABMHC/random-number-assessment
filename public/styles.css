@@ -1,0 +1,152 @@
+/* General Styling */
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Ensure space between the container and footer/progress bar */
+  align-items: center;
+  min-height: 100vh; /* Ensure full height layout */
+  background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+  color: #333;
+}
+
+/* Main container styling */
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  flex-grow: 1; /* Ensures it stretches to fill available space */
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: center; /* Center elements within the container */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  line-height: 1.6;
+  text-align: center;
+  color: #555;
+}
+
+/* Buttons */
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+button.primary-button {
+  background: #007BFF;
+  color: white;
+  margin-top: 15px;
+}
+
+button.primary-button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+button.secondary-button {
+  background: #6c757d;
+  color: white;
+}
+
+button.secondary-button:hover {
+  background: #565e64;
+  transform: scale(1.05);
+}
+
+/* Input Fields */
+input {
+  padding: 12px 15px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin-top: 20px; /* Space between prompt and input */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Progress Bar */
+#progress-container {
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 15px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+  height: 100%;
+  background: #28a745;
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  #progress-container {
+    width: 90%;
+  }
+}
